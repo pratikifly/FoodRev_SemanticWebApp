@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="header">
+            <h1>Semantic Web App</h1>
+        </div>
+        <p class="lead">This is a simple web demo of semantic search (search by meaning) 
+            on food products and their reviews. Happy searching!</p>
+        <p>
+            This Web App is built for all the foodies out there who are looking to explore the world of cuisines. It uses the 
+            Semantic Framework and implements the Semantic Search on the food products and their reviews. The Semantic Framework used in 
+            this application derives the meaning of the search query and then searches for the products and reviews that matches the open
+            source data library of Amazon Fine Foods review site. Then it brings together all the results of the queries and displays
+            them in a tabular format.
+        </p>
+        <hr class="my-4">
+        <p>The web app is built on Django, which is a Python based web framework to build and deploy easy to handle websites.
+           We have also used HTML, CSS, JavaScript to make the simple yet minimalistic Frontend of this website. </p>
+        <a class="btn waves-effect waves-light red lighten-2" href="/search" 
+            role="button" onclick="showLoader()">Search now</a>
+        <a class="btn waves-effect waves-light" href="https://github.com/pratikifly/FoodRev_SemanticWebApp.git" 
+            role="button" target="_blank">Learn more</a>
+    </div>
+</div>
+{% endblock %}
